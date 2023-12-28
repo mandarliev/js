@@ -13,3 +13,16 @@ console.log(students);
 
 students.pop();
 console.log(students);
+
+// Arrays 101 - slice (it's non-inclusive)
+console.log(students.slice(1,3));
+
+// Arrays 101 - splice(start, end, item1, item2, itemX)
+// WARNING: Splice overwrites the original array
+students.splice(0, 3, 'Bob', 'Andy')
+console.log(students);
+
+// Arrays 101 - shift - removes first item of array and returns it
+// WARNING: shift overwrites the original array
+const firstStudent = students.shift();
+console.log(firstStudent);
