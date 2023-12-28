@@ -5,3 +5,11 @@
 
 const students = ["Dimitar", "Ivan", "Sarah", "Nikola", "Jesus"];
 
+// Arrays 101 - Push & Pop
+// Push adds new element and returns length of the array
+// Pop removes the last element of the array and returns it
+students.push('Kiril');
+console.log(students);
+
+students.pop();
+console.log(students);
