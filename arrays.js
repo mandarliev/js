@@ -3,7 +3,7 @@
 
 // Full list of functions here: https://www.w3schools.com/js/js_array_methods.asp
 
-const students = ["Dimitar", "Ivan", "Sarah", "Nikola", "Jesus"];
+let students = ["Dimitar", "Ivan", "Sarah", "Nikola", "Jesus"];
 
 // Arrays 101 - Push & Pop
 // Push adds new element and returns length of the array
@@ -31,3 +31,25 @@ console.log(firstStudent);
 // WARNING: unshift overwrites the original array
 students.unshift("Apple", "Banana", "Orange");
 console.log(students);
+
+// Arrays 101 - join
+students.join(" | ");
+
+// Arrays 101 - fill
+students.fill("Mandarliev", 0, students.length);
+console.log(students);
+
+// Arrays 101 - length
+console.log(students.length);
+
+// Arrays 101 - toString
+console.log(students.toString());
+
+// Arrays 101 - recerse
+students = ["Dimitar", "Ivan", "Sarah", "Nikola", "Jesus"];
+console.log(students.reverse());
+
+// Arrays 101 - contact
+let moreStudents = ['Andy', 'Andrew', 'Stefani'];
+const allStudents = students.concat(moreStudents).concat(['Andy'])
+console.log(allStudents);
