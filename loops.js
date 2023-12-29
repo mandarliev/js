@@ -70,3 +70,17 @@ const colors = ["red", "blue", "yellow", "green", "orange"];
 colors.forEach((color) => {
   console.log(color);
 });
+
+// I can also get access to the index
+colors.forEach((color, i) => {
+  console.log(`The #${i + 1} color is ${color}`);
+});
+
+// Bonus: forEach ES6 loop (How to use for Objects)
+console.log(Object.entries(person)); // It lists the object as an array
+
+Object.entries(person).forEach(([key, value]) => {
+  console.log(`the key is ${key}`);
+  console.log(`the value is ${value}`);
+  console.log("---");
+});
