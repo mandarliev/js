@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "product_details": {
+      "category": "Electronics - Tablet",
+      "name": "iPad"
+    },
+    "price_data": {
+      "price": 900,
+      "salePrice": 500
+    }
+  },
+  {
+    "id": 1,
+    "product_details": {
+      "category": "Electronics - Tablet",
+      "name": "iPad"
+    },
+    "price_data": {
+      "price": 900,
+      "salePrice": 500
+    }
+  },
+  {
+    "id": 1,
+    "product_details": {
+      "category": "Electronics - Tablet",
+      "name": "iPad"
+    },
+    "price_data": {
+      "price": 900,
+      "salePrice": 500
+    }
+  }
+]
