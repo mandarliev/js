@@ -5,7 +5,7 @@
     "price": 900,
     "category": {
       "highLevel": "Electronics",
-      "lowLeve": "Tablet"
+      "lowLevel": "Tablet"
     },
     "salePrice": 500
   },
@@ -15,7 +15,7 @@
     "price": 600,
     "category": {
       "highLevel": "Electronics",
-      "lowLeve": "Console"
+      "lowLevel": "Console"
     },
     "salePrice": 400
   },
@@ -25,7 +25,7 @@
     "price": 300,
     "category": {
       "highLevel": "Electronics",
-      "lowLeve": "Console"
+      "lowLevel": "Console"
     },
     "salePrice": 100
   }
