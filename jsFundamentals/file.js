@@ -84,7 +84,92 @@ console.log(student2); // Peshi, etc.
 // student.courses.math?.teacher // the question mark basically means that math might not be there
 
 // Dynamic keys in objects
-const subject = 'maths';
+const subject = "maths";
 // student.courses['subject']?.teacher // subject is a dynamic key
 
 // Loops
+
+// The old school way
+for (let i = 0; i < 10; i++) {
+  console.log(i);
+}
+
+// same shit
+const colors2 = ["red", "blue", "green"];
+for (let i = 0; i < colors2.length; i++) {
+  console.log(colors2[i]);
+}
+console.log("/1"); // just to separate the output
+
+// still old way
+for (let i of colors2) {
+  console.log(i);
+}
+
+console.log("/2"); // just to separate the output
+
+// best way
+colors2.forEach((color) => console.log(color));
+
+// if you want the index as well
+colors2.forEach((color, i) => console.log(i + " " + color));
+console.log("/3"); // just to separate the output
+
+// However with forEach() we don't get a value back
+const sentences = colors2.forEach((color, i) => color);
+console.log(sentences); // undefined
+
+/**
+ * A good scenario to use forEach() would be, for example, if we want to send a notification or invoke a function every time we iterate over an item, i.e:
+ * colors.forEach(color => {
+ *  sendNotification(color;)
+ * })
+ */
+
+// map() returns a value
+
+/**
+ * While loops
+ * They are dangerous because they run as long as a condition is true
+ */
+
+console.log("/4"); // just to separate the output
+
+// Functions (ES6 vs normal)
+
+// Traditional
+function printName(name, age) {
+  console.log(name, age);
+}
+printName("pesho", 35);
+
+// Arrow functions. Arrow functions are variables
+const printName2 = (name, age) => {
+  console.log(name, age);
+};
+
+printName2("pesho", 29);
+
+// A prop in React is basically an argument to a function. Hence the name functional components. :)
+
+// Currying
+const sum = (num1) => (num2) => {
+  console.log(num1 + num2);
+};
+
+sum(1)(2);
+console.log("/5"); // just to separate the output
+
+// Recursion
+function countDown(number) {
+  console.log(number);
+  const newNumber = number - 1;
+
+  if (newNumber > 0) {
+    countDown(newNumber);
+  }
+}
+
+countDown(4); // 4 / 3 / 2 / 1
+
+
