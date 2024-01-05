@@ -172,4 +172,13 @@ function countDown(number) {
 
 countDown(4); // 4 / 3 / 2 / 1
 
+// find()
+const dimitar = students.find((student) => student === "Dimitar");
+console.log(dimitar);
 
+// async / await
+const product = fetch("https://fakestoreapi.com/products/1") // this returns a Promise
+  .then((res) => res.json()) // this turns the Promiso to json
+  .then((json) => console.log(json));
+
+console.log(product);
