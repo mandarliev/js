@@ -35,7 +35,6 @@ const printName = (name) => {
 printName(); // undefined
 printName('Pesho')
 
-
 // Loops
 
 // Async
